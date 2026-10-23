@@ -30,5 +30,7 @@ This example illustrates the proposed style and is not yet executable.
 
 - **Maintainer:** [Paperfrogs](https://paperfrogs.dev/)
 - **License:** [Proprietary; all rights reserved by Paperfrogs HQ](LICENSE)
+- **Code of conduct:** [Community guidelines](CODE_OF_CONDUCT.md)
+- **Security:** [Vulnerability reporting policy](SECURITY.md)
 
 **Readable by design. Safe by default. Built for what comes next.**
