@@ -6,7 +6,7 @@ Pefra aims for readable syntax, static typing with inference, explicit semantics
 
 ## Current status
 
-M0 establishes the Rust project and a small `pefra` CLI. The CLI displays help and version information. It cannot read or execute `.pf` files yet. The syntax and semantics are still proposals; see the [overview](docs/spec/000-overview.md).
+M0 establishes the Rust project and a small `pefra` CLI. The CLI displays help and version information. It cannot read or execute `.pf` files yet. The syntax and semantics are still proposals.
 
 ## Prerequisites and build
 
