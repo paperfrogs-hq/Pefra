@@ -7,3 +7,6 @@
 *.swp
 *.swo
 *~
+AGENTS.md
+ROADMAP.md
+docs/decisions
