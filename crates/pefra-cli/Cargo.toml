@@ -1,0 +1,10 @@
+[package]
+name = "pefra"
+version = "0.1.0"
+edition = "2021"
+description = "Experimental Pefra command-line interface"
+license = "LicenseRef-Proprietary"
+
+[[bin]]
+name = "pefra"
+path = "src/main.rs"

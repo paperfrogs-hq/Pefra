@@ -2,29 +2,34 @@
 
 **An experimental programming language by [Paperfrogs](https://paperfrogs.dev/).**
 
-Pefra explores how expressive syntax, memory safety, systems programming, and native AI/ML capabilities can work together. The goal is to make low-level programming more approachable while preserving control, performance, and reliability.
-
-## Design goals
-
-- **Readable syntax:** Keep programs clear and expressive.
-- **Static typing:** Support type inference with explicit annotations when needed.
-- **Memory safety:** Explore ownership and borrowing as part of the language design.
-- **Systems performance:** Provide a foundation for efficient native applications.
-- **Native AI/ML:** Eventually make tensors and machine learning first-class capabilities.
+Pefra aims for readable syntax, static typing with inference, explicit semantics, useful diagnostics, and eventually practical systems programming and numerical computing. These are design goals, not available language features.
 
 ## Current status
 
-Pefra is in the early design and prototyping stage. Its syntax, semantics, compiler architecture, and runtime are still being developed. The goals above describe the intended direction; they are not implemented guarantees.
+M0 establishes the Rust project and a small `pefra` CLI. The CLI displays help and version information. It cannot read or execute `.pf` files yet. The syntax and semantics are still proposals; see the [overview](docs/spec/000-overview.md) and [roadmap](ROADMAP.md).
 
-## Syntax preview
+## Prerequisites and build
 
-```text
-fn main():
-    message = "Hello, Pefra!"
-    print(message)
+Install stable Rust with Cargo, rustfmt, and Clippy. From the repository root:
+
+```sh
+cargo build --workspace
+cargo run -p pefra -- --help
+cargo run -p pefra -- --version
 ```
 
-This example illustrates the proposed style and is not yet executable.
+Run the project checks with:
+
+```sh
+cargo fmt --all -- --check
+cargo clippy --workspace --all-targets -- -D warnings
+cargo test --workspace
+cargo build --workspace
+```
+
+## Planned milestones
+
+M1 defines an initial language specification. M2 adds a lexer, M3 a parser, M4 an interpreter, and M5 static type checking. Later milestones cover core features, tooling, native compilation, and further research. See [ROADMAP.md](ROADMAP.md) for details and status.
 
 ## Project information
 
@@ -32,5 +37,3 @@ This example illustrates the proposed style and is not yet executable.
 - **License:** [Proprietary; all rights reserved by Paperfrogs HQ](LICENSE)
 - **Code of conduct:** [Community guidelines](CODE_OF_CONDUCT.md)
 - **Security:** [Vulnerability reporting policy](SECURITY.md)
-
-**Readable by design. Safe by default. Built for what comes next.**

@@ -1,0 +1,3 @@
+[workspace]
+members = ["crates/pefra-cli"]
+resolver = "2"
