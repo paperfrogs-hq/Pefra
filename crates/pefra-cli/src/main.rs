@@ -12,7 +12,8 @@ Options:
 Pefra source execution is not implemented yet.";
 
 fn main() -> ExitCode {
-    match env::args().skip(1).collect::<Vec<_>>().as_slice() {
+    let args: Vec<_> = env::args_os().skip(1).collect();
+    match args.as_slice() {
         [] => {
             println!("{HELP}");
             ExitCode::SUCCESS
@@ -25,8 +26,15 @@ fn main() -> ExitCode {
             println!("pefra {}", env!("CARGO_PKG_VERSION"));
             ExitCode::SUCCESS
         }
+        [arg] => {
+            eprintln!(
+                "Unsupported argument: {}. Run `pefra --help` for usage.",
+                arg.to_string_lossy()
+            );
+            ExitCode::FAILURE
+        }
         _ => {
-            eprintln!("Unsupported arguments. Run `pefra --help` for usage.");
+            eprintln!("Expected one option. Run `pefra --help` for usage.");
             ExitCode::FAILURE
         }
     }

@@ -22,5 +22,5 @@ fn unsupported_command_fails() {
         .output()
         .unwrap();
     assert!(!output.status.success());
-    assert!(String::from_utf8_lossy(&output.stderr).contains("Unsupported arguments"));
+    assert!(String::from_utf8_lossy(&output.stderr).contains("Unsupported argument: run"));
 }
