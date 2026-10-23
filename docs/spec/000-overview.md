@@ -18,4 +18,4 @@ The first language version does not require native compilation, LLVM, ownership 
 
 The proposed source extension is `.pf`. The implementation is written in Rust. The intended development sequence is specification, lexer and source spans, parser and AST, a small tree-walk interpreter, then type checking. A future IR and native backend need separate decisions. The syntax examples in project discussions are illustrative and do not settle grammar or semantics.
 
-M1 must decide source encoding, grammar, typing, numeric behavior, scope, evaluation order, errors, and the program entry point before their implementation. Decisions should be recorded in [design records](../decisions/README.md) and reflected in the approved specification.
+M1 must decide source encoding, grammar, typing, numeric behavior, scope, evaluation order, errors, and the program entry point before their implementation. Decisions should be recorded and reflected in the approved specification.

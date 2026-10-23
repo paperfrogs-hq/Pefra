@@ -6,7 +6,7 @@ Pefra aims for readable syntax, static typing with inference, explicit semantics
 
 ## Current status
 
-M0 establishes the Rust project and a small `pefra` CLI. The CLI displays help and version information. It cannot read or execute `.pf` files yet. The syntax and semantics are still proposals; see the [overview](docs/spec/000-overview.md) and [roadmap](ROADMAP.md).
+M0 establishes the Rust project and a small `pefra` CLI. The CLI displays help and version information. It cannot read or execute `.pf` files yet. The syntax and semantics are still proposals; see the [overview](docs/spec/000-overview.md).
 
 ## Prerequisites and build
 
@@ -29,7 +29,7 @@ cargo build --workspace
 
 ## Planned milestones
 
-M1 defines an initial language specification. M2 adds a lexer, M3 a parser, M4 an interpreter, and M5 static type checking. Later milestones cover core features, tooling, native compilation, and further research. See [ROADMAP.md](ROADMAP.md) for details and status.
+M1 defines an initial language specification. M2 adds a lexer, M3 a parser, M4 an interpreter, and M5 static type checking. Later milestones cover core features, tooling, native compilation, and further research.
 
 ## Project information
 
